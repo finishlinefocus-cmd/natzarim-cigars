@@ -1,13 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Natzarim</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natzarim Premium Cigars | AHAV - Humble - Meek</title>
+    <style>
+        body {
+            background-color: #1a0f0a; /* Deep mahogany aesthetic */
+            color: #d4af37; /* Gold accent color */
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* Hero Section with high-res humidor background */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Grok Image 2026-04-30 at 4.54.32 PM.png');
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-bottom: 3px solid #d4af37;
+        }
+        .hero-title { font-size: 4rem; margin: 0; text-transform: uppercase; letter-spacing: 5px; }
+        .hero-subline { font-style: italic; font-size: 1.5rem; margin-top: 10px; }
+        
+        /* Philosophy Section */
+        .philosophy {
+            padding: 80px 20px;
+            text-align: center;
+            background: #26160d;
+        }
+        .philosophy h2 { font-size: 2.5rem; margin-bottom: 20px; }
+        .philosophy p { max-width: 800px; margin: 0 auto; line-height: 1.8; font-size: 1.2rem; }
+
+        /* Product Gallery */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 60px 20px;
+        }
+        .product-card {
+            background: #1a0f0a;
+            border: 1px solid #d4af37;
+            padding: 20px;
+            width: 320px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover { transform: scale(1.05); }
+        .product-card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-bottom: 1px solid #d4af37;
+            margin-bottom: 20px;
+        }
+        .product-card h3 { margin: 15px 0 10px; font-size: 1.5rem; }
+        .product-card p { font-size: 1rem; color: #fdfdfd; opacity: 0.8; }
+    </style>
 </head>
 <body>
 
-<h1>NATZARIM</h1>
-<p>AHAV — Humble / Meek</p>
+    <header>
+        <h1 class="hero-title">NATZARIM</h1>
+        <p class="hero-subline">Crafted for the Humble. Rolled for the Meek. Rooted in AHAV.</p>
+    </header>
+
+    <section class="philosophy">
+        <h2>Our Core Values</h2>
+        <p>A tradition of light and excellence. Every Natzarim cigar is a testament to <strong>AHAV</strong>, created for those who value humility and the quiet strength of the meek.</p>
+    </section>
+
+    <section class="gallery">
+        <div class="product-card">
+            <img src="IMG_0042.jpeg" alt="Signature Single Cigar">
+            <h3>Signature Single</h3>
+            <p>A detailed look at the craftsmanship of the individual roll.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="Grok Image 2026-04-30 at 4.54.51 PM.png" alt="Artisan Bundle">
+            <h3>Artisan Bundle</h3>
+            <p>Consistency and quality for the dedicated enthusiast.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="Grok Image 2026-04-30 at 4.54.41 PM.png" alt="Master Humidor">
+            <h3>Master Humidor</h3>
+            <p>Our premium collector's box for true connoisseurs.</p>
+        </div>
+    </section>
 
 </body>
 </html>
